@@ -2,7 +2,7 @@
 
 # dependencies
 node_modules/
-
+android/
 # Expo
 .expo/
 dist/
@@ -34,3 +34,5 @@ yarn-error.*
 
 # typescript
 *.tsbuildinfo
+
+google-services.json

@@ -1,28 +1,37 @@
 {
   "expo": {
-    "name": "eli-power",
-    "slug": "eli-power",
+    "name": "Eli Power",
+    "slug": "Eli Power",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "userInterfaceStyle": "dark",
     "newArchEnabled": true,
+    "scheme": "elipower",
+    "plugins": [["@react-native-google-signin/google-signin"], "expo-router"],
     "splash": {
       "image": "./assets/splash-icon.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    },
-    "ios": {
-      "supportsTablet": true
+      "backgroundColor": "#000"
     },
     "android": {
+      "googleServicesFile": "./google-services.json",
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      }
+        "foregroundImage": "./assets/ic_launcher_round.png",
+        "backgroundColor": "#000"
+      },
+      "package": "com.manueldev.elipower"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "ea31de50-18aa-439d-8349-282fab68ebe5"
+      }
+    },
+    "ios": {
+      "bundleIdentifier": "com.manueldev.elipower"
     }
   }
 }
